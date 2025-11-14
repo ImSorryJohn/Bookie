@@ -45,7 +45,7 @@ public class PlayerController2D : MonoBehaviour
         //Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        if (isGrounded);
+        if (isGrounded && jumpsLeft !=maxJumps)
         {
             jumpsLeft = maxJumps;//resets the jump when on ground 
         }
