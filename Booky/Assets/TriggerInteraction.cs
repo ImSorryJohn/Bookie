@@ -6,12 +6,12 @@ public class TriggerInteraction : MonoBehaviour
 {
     public UnityEvent enteredTrigger, exitedTrigger;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider other)
     {
         enteredTrigger.Invoke();
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider other)
     {
         exitedTrigger.Invoke();
     }
